@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import Navigation from "@/components/Navigation";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,13 +26,19 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
-        <div>
-          <Link href={"/"}>Home</Link> | <Link href={"/about"}>About</Link> | 
-          <Link href={"/contact"}>Contact</Link>
-        </div>
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased font-satoshi`}>
+      <head>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen flex flex-col">
+
+        <Navigation />
+
         {children}
+
       </body>
     </html>
   );
