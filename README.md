@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nextjs-full
+
+A personal Next.js project built with the App Router, Tailwind CSS, and TypeScript.
+
+## Stack
+
+- **Framework** — Next.js 16 (App Router)
+- **Language** — TypeScript
+- **Styling** — Tailwind CSS v4
+- **Font** — Satoshi (Fontshare), Geist / Geist Mono (Google Fonts)
+- **Animation** — Lottie React
+- **Testing** — Jest + React Testing Library
+
+## Project Structure
+
+```
+app/
+  layout.tsx          # Root layout — nav, footer, fonts
+  page.tsx            # Home route (/)
+  home/page.tsx       # Home page content
+  about/page.tsx      # About route (/about)
+  contact/page.tsx    # Contact route (/contact)
+  globals.css         # Global styles and Tailwind config
+
+components/
+  Navigation.tsx      # Nav bar with active link indicator
+  Footer.tsx          # Footer with live Malibu weather + date
+  PageLayout.tsx      # Shared page wrapper (gray wings layout)
+  LottieAnimation.tsx # Lottie animation wrapper
+
+__tests__/            # Jest test files
+public/               # Static assets
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm test` | Run tests once |
+| `npm run test:watch` | Run tests in watch mode |
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Active nav link indicator using `usePathname`
+- Live weather widget in footer (Malibu, CA) via [Open-Meteo](https://open-meteo.com) — no API key required
+- Lottie animation on the About page
+- Shared `PageLayout` component for consistent page structure
+- Global Satoshi font with Tailwind utility fallbacks
