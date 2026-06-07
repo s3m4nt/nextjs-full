@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* stylelint-disable at-rule-no-unknown */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -27,31 +29,28 @@ body {
 }
 
 @layer components {
+  .flex-col-c {
+    @apply flex flex-col items-center justify-center;
+  }
+  .flex-col-s {
+    @apply flex flex-col items-start justify-start;
+  }
+  .text-content {
+    @apply mt-5;
+  }
   .body-text p {
     @apply py-2 px-1;
   }
 }
 
-h1 {
-  font-family: var(--font-satoshi);
-  font-weight: 900;
-  font-size: 2.9rem;
-  line-height: 1.2;
-  letter-spacing: -0.05em;
-  margin-bottom: 1rem;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-p {
-  font-family: var(--font-satoshi);
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
-  margin-bottom: 1rem;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+@layer base {
+  h1 {
+    @apply font-extrabold text-4xl leading-tight tracking-tight mb-4 mt-0 text-center w-full;
+  }
+  p {
+    @apply font-normal text-lg leading-relaxed tracking-wide mb-2 mt-2;
+  }
+  p:first-child {
+    @apply mt-4;
+  }
 }

@@ -14,13 +14,13 @@ export default function Navigation() {
 
   return (
     <div className="font-black border-b border-slate-500 shadow-md shadow-stone-200 relative z-10 flex justify-center text-4xl p-5">
-      <div className="flex flex-row gap-6 justify-around w-1/2">
+      <div className="flex flex-col md:flex-row gap-6 justify-center md:justify-around">
 
         {links.map(({ href, label }) => (
           <Link
             key={href}
             href={href}
-            className={pathname === href ? "border-b-2 border-black" : ""}
+            className={`text-center ${pathname === href ? "border-b-2 border-black" : ""}`}
           >
             {label}
           </Link>

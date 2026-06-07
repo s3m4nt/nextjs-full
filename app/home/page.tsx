@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomePage() {
     return (
-        <div className="flex flex-col items-center justify-start">
+        <div className="flex-col-s">
 
             <h1>THIS IS THE HOMEPAGE.</h1>
 
@@ -14,7 +14,7 @@ export default function HomePage() {
             priority
             />
 
-            <span className="mt-5 body-text">
+            <span className="body-text">
                 <p>
                     Lorem ipsum dolor sit amet, eum probo nihil nostrud et, ex his minim ridens. Ius ut elit primis inciderint, ne nostrum detraxit pro, ex usu dolorem vituperata honestatis. Ei appellantur conclusionemque est, esse atomorum at eum, liber nostro repudiare eos cu. Dicta soleat mel no, ius habemus adolescens ut.
                 </p>

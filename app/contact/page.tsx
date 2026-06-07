@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function ContactPage() {
     return (
         <PageLayout>
-        <div className="flex flex-col items-center justify-start">
+        <div className="flex-col-s">
 
           <h1>CONTACT.</h1>
 
-            <span className="mt-5 body-text">
-                <p>
+            <span className="body-text">
+                <p className="text-center">
                     <Link className="text-blue-500 underline"
                       href="mailto:Loremipsum@aol.com">Loremipsum@aol.com
                     </Link>

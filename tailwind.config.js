@@ -6,6 +6,10 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    screens: {
+      xsm: '460px',
+      ...defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
         satoshi: ['"Satoshi"', ...defaultTheme.fontFamily.sans],
