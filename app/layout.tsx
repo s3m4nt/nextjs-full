@@ -27,12 +27,6 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased font-satoshi`}>
-      <head>
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body className="min-h-screen flex flex-col">
 
         <Navigation />

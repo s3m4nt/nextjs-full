@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-  font-family: var(--font-satoshi)s;
+  font-family: var(--font-satoshi);
   font-weight: 900;
   font-size: 2.9rem;
   line-height: 1.2;
