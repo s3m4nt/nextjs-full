@@ -9,7 +9,7 @@ export default function ContactPage() {
           <h1>CONTACT.</h1>
 
             <span className="body-text">
-                <p className="text-center">
+                <p className="text-center w-full">
                     <Link className="text-blue-500 underline"
                       href="mailto:Loremipsum@aol.com">Loremipsum@aol.com
                     </Link>
