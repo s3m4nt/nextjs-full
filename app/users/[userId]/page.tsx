@@ -1,5 +1,6 @@
 import PageLayout from "@/components/PageLayout";
 import { notFound } from "next/navigation";
+import BackButton from "@/components/BackButton";
 
 // Ensure this route is rendered on each request
 export const dynamic = "force-dynamic";
@@ -65,6 +66,7 @@ export default async function UserPage({
         <p>
           <strong>Address:</strong> {user.address.street}, {user.address.city}
         </p>
+        <BackButton />
       </div>
     </PageLayout>
   );

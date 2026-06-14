@@ -21,7 +21,7 @@ export default function Navigation() {
           <Link
             key={href}
             href={href}
-            className={`text-center ${pathname === href ? "border-b-2 border-black" : ""}`}
+            className={`text-center underline decoration-2 ${pathname === href || pathname.startsWith(href + '/') ? 'decoration-black' : 'decoration-transparent'}`}
           >
             {label}
           </Link>

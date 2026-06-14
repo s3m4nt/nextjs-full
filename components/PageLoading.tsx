@@ -7,7 +7,7 @@ export default function PageLoading() {
   return (
     <div className="flex-col-c height-full bg-white">
       
-      <h1 className="mb-0">LOADING ...</h1>
+      <h1 className="mt-8 mb-0">LOADING ...</h1>
       
       <Lottie
         animationData={animationData}
