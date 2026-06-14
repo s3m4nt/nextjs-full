@@ -24,6 +24,7 @@
 .DS_Store
 *.pem
 *bin.code-workspace
+Course_Info.md
 
 # debug
 npm-debug.log*

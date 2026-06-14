@@ -29,7 +29,7 @@ export default async function Footer() {
   const printDate = new Date().toLocaleDateString();
 
   return (
-    <div className="flex flex-row justify-between text-sm text-gray-500 w-full mt-auto pt-4 border-t border-gray-200">
+    <div className="flex flex-row justify-between text-sm text-gray-500 w-full mt-7 pt-4 border-t border-gray-200">
       <span>&copy; All Rights Reserved 2026</span>
       {weather && (
         <span title="Malibu, CA">{weather.icon} {weather.temp}°F</span>
