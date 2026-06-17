@@ -48,13 +48,17 @@ export default async function UserPage({
           <strong>Email:</strong> {user.email}
         </p>
         <p>
-          <strong>Phone:</strong> {user.phone}
+          <strong>Phone:</strong>{" "}
+          <a href={`tel:${user.phone}`} className="text-gray-600 underline">
+            {user.phone}
+          </a>
         </p>
         <p>
           <strong>Website:</strong>{" "}
           <a
             href={`https://${user.website}`}
             target="_blank"
+            className="text-gray-600 underline"
             rel="noopener noreferrer"
           >
             {user.website}

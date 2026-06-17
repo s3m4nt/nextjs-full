@@ -4,7 +4,7 @@ export default function HomePage() {
     return (
         <div className="flex-col-s">
 
-            <h1>THIS IS THE HOMEPAGE.</h1>
+            <h1>HOMEPAGE.</h1>
 
             <Image
             src="https://images.unsplash.com/photo-1501789605990-988ca86e9ff3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVtb3JpYWwlMjBkYXl8ZW58MHx8MHx8fDA%3D"

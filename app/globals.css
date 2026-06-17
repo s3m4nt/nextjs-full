@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 /* stylelint-disable at-rule-no-unknown */
@@ -48,7 +49,7 @@ body {
 
 @layer base {
   h1 {
-    @apply font-extrabold text-4xl leading-tight tracking-tight mb-4 mt-0 text-center w-full;
+    @apply font-satoshi font-black text-4xl leading-tight tracking-tight mb-4 mt-0 text-center w-full;
   }
   p {
     @apply font-normal text-lg leading-relaxed tracking-wide mb-2 mt-2;

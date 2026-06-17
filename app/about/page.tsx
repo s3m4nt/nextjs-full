@@ -6,7 +6,7 @@ export default function AboutPage() {
         <PageLayout>
         <div className="flex-col-c">
 
-          <h1>ABOUT US.</h1>
+          <h1>ABOUT.</h1>
           <LottieAnimation />
 
             <span className="body-text">

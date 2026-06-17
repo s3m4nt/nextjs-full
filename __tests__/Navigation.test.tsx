@@ -16,12 +16,12 @@ describe("Navigation", () => {
   it("applies active style to the current page link", () => {
     render(<Navigation />);
     const homeLink = screen.getByText("Home").closest("a");
-    expect(homeLink).toHaveClass("border-b-2");
+    expect(homeLink).toHaveClass("underline", "decoration-2", "decoration-black");
   });
 
   it("does not apply active style to inactive links", () => {
     render(<Navigation />);
     const aboutLink = screen.getByText("About").closest("a");
-    expect(aboutLink).not.toHaveClass("border-b-2");
+    expect(aboutLink).toHaveClass("underline", "decoration-2", "decoration-transparent");
   });
 });
